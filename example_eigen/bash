@@ -1,0 +1,9 @@
+# Run this file manually from shell
+
+#pip install pybind11 numpy
+# Eigen3 on Ubuntu: sudo apt install libeigen3-dev
+# Eigen3 on macOS:  brew install eigen
+
+cmake -S . -B build
+cmake --build build
+cp build/eigenbind*.so ..   # copy the .so next to the test script
